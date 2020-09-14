@@ -151,6 +151,10 @@ body {
   color: #fff;
   opacity: .8;
 }
+#specials-tile {
+  background: url(../images/specials-tile.jpg) no-repeat;
+  background-position: center;
+}
 /* END HOME PAGE */
 
 /* MENU CATEGORIES PAGE */
@@ -250,9 +254,9 @@ h3.menu-item-title {
   /* End Header */
 
   /* Home Page */
-  .container .jumbotron {
+  /*.container .jumbotron {
     background: url('../images/jumbotron_992.jpg') no-repeat;
-    height: 558px;
+    height: 558px;*/
   }
   /* End Home Page */
 }
