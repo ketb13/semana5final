@@ -1,22 +1,140 @@
-    <div class="jumbotron">
-      <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
-    </div>
+<div class="container ng-scope">
+  <h2 id="menu-categories-title" class="text-center ng-binding">
+    Chef's Recommendations Menu
+  </h2>
+  <div class="text-center ng-binding">
+    
+  </div>
 
-    <div id="home-tiles" class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="#" onclick="$dc.loadMenuCategories();"><div id="menu-tile"><span>menu</span></div></a>
+  <!-- ngRepeat: menuItem in menuItemsCtrl.menuItems.menu_items --><menu-item ng-repeat="menuItem in menuItemsCtrl.menuItems.menu_items" menu-item="menuItem" class="ng-scope ng-isolate-scope"><div class="menu-item-tile col-md-6">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="menu-item-photo">
+        <div class="ng-binding">SP1</div>
+        <img class="img-responsive" width="250" height="150" ng-src="https://www.davidchuschinabistro.com/images/SP1.jpg" alt="Chinese Scallion Pancake Wrap" src="https://www.davidchuschinabistro.com/images/SP1.jpg">
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="#" onclick="$dc.loadMenuItems({{randomCategoryShortName}});">
-          <div id="specials-tile"><span>specials</span></div>
-        </a>
+      <div class="menu-item-price ng-binding"><span class="ng-binding"> </span> $21.95 <span class="ng-binding"></span></div>
+    </div>
+    <div class="menu-item-description col-sm-7">
+      <h3 class="menu-item-title ng-binding">Chinese Scallion Pancake Wrap</h3>
+      <p class="menu-item-details ng-binding">with choice of string bean, string bean chicken, string bean beef, beef onions, moo shu vegetable</p>
+    </div>
+  </div>
+  <hr class="visible-xs">
+</div>
+</menu-item><!-- end ngRepeat: menuItem in menuItemsCtrl.menuItems.menu_items --><menu-item ng-repeat="menuItem in menuItemsCtrl.menuItems.menu_items" menu-item="menuItem" class="ng-scope ng-isolate-scope"><div class="menu-item-tile col-md-6">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="menu-item-photo">
+        <div class="ng-binding">SP5</div>
+        <img class="img-responsive" width="250" height="150" ng-src="https://www.davidchuschinabistro.com/images/SP5.jpg" alt="Happy Family" src="https://www.davidchuschinabistro.com/images/SP5.jpg">
       </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <a href="https://www.google.com/maps/place/David+Chu's+China+Bistro/@39.3635874,-76.7138622,17z/data=!4m6!1m3!3m2!1s0x89c81a14e7817803:0xab20a0e99daa17ea!2sDavid+Chu's+China+Bistro!3m1!1s0x89c81a14e7817803:0xab20a0e99daa17ea" target="_blank">
-          <div id="map-tile">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.675372390488!2d-76.71386218529199!3d39.3635874269356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid+Chu&#39;s+China+Bistro!5e0!3m2!1sen!2sus!4v1452824864156" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <span>map</span>
-          </div>
-        </a>
+      <div class="menu-item-price ng-binding"><span class="ng-binding"> </span> $22.95 <span class="ng-binding"></span></div>
+    </div>
+    <div class="menu-item-description col-sm-7">
+      <h3 class="menu-item-title ng-binding">Happy Family</h3>
+      <p class="menu-item-details ng-binding">beef, veal, and chicken sauteed with mixed vegetables in chef's special sauce; lo mein served on the side</p>
+    </div>
+  </div>
+  <hr class="visible-xs">
+</div>
+</menu-item><!-- end ngRepeat: menuItem in menuItemsCtrl.menuItems.menu_items --><menu-item ng-repeat="menuItem in menuItemsCtrl.menuItems.menu_items" menu-item="menuItem" class="ng-scope ng-isolate-scope"><div class="menu-item-tile col-md-6">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="menu-item-photo">
+        <div class="ng-binding">SP8</div>
+        <img class="img-responsive" width="250" height="150" ng-src="https://www.davidchuschinabistro.com/images/SP8.jpg" alt="Sesame Beef" src="https://www.davidchuschinabistro.com/images/SP8.jpg">
       </div>
-    </div><!-- End of #home-tiles -->
+      <div class="menu-item-price ng-binding"><span class="ng-binding"> </span> $21.95 <span class="ng-binding"></span></div>
+    </div>
+    <div class="menu-item-description col-sm-7">
+      <h3 class="menu-item-title ng-binding">Sesame Beef</h3>
+      <p class="menu-item-details ng-binding">a few cuts of beef, breaded, deep-fried with sauce containing sesame seeds; served with lo mein on the side</p>
+    </div>
+  </div>
+  <hr class="visible-xs">
+</div>
+</menu-item><!-- end ngRepeat: menuItem in menuItemsCtrl.menuItems.menu_items --><menu-item ng-repeat="menuItem in menuItemsCtrl.menuItems.menu_items" menu-item="menuItem" class="ng-scope ng-isolate-scope"><div class="menu-item-tile col-md-6">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="menu-item-photo">
+        <div class="ng-binding">SP4</div>
+        <img class="img-responsive" width="250" height="150" ng-src="https://www.davidchuschinabistro.com/images/SP4.jpg" alt="Orange Chicken and Beef Combo" src="https://www.davidchuschinabistro.com/images/SP4.jpg">
+      </div>
+      <div class="menu-item-price ng-binding"><span class="ng-binding"> </span> $22.95 <span class="ng-binding"></span></div>
+    </div>
+    <div class="menu-item-description col-sm-7">
+      <h3 class="menu-item-title ng-binding">Orange Chicken and Beef Combo</h3>
+      <p class="menu-item-details ng-binding">white meat chicken and beef, breaded and deep-fried with special house sauce; served with lo mein and vegetables</p>
+    </div>
+  </div>
+  <hr class="visible-xs">
+</div>
+</menu-item><!-- end ngRepeat: menuItem in menuItemsCtrl.menuItems.menu_items --><menu-item ng-repeat="menuItem in menuItemsCtrl.menuItems.menu_items" menu-item="menuItem" class="ng-scope ng-isolate-scope"><div class="menu-item-tile col-md-6">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="menu-item-photo">
+        <div class="ng-binding">SP3</div>
+        <img class="img-responsive" width="250" height="150" ng-src="https://www.davidchuschinabistro.com/images/SP3.jpg" alt="Vegetable Tempura" src="https://www.davidchuschinabistro.com/images/SP3.jpg">
+      </div>
+      <div class="menu-item-price ng-binding"><span class="ng-binding"> </span> $19.95 <span class="ng-binding"></span></div>
+    </div>
+    <div class="menu-item-description col-sm-7">
+      <h3 class="menu-item-title ng-binding">Vegetable Tempura</h3>
+      <p class="menu-item-details ng-binding">assorted vegetables breaded and fried, served with lo mein on the side</p>
+    </div>
+  </div>
+  <hr class="visible-xs">
+</div>
+</menu-item><!-- end ngRepeat: menuItem in menuItemsCtrl.menuItems.menu_items --><menu-item ng-repeat="menuItem in menuItemsCtrl.menuItems.menu_items" menu-item="menuItem" class="ng-scope ng-isolate-scope"><div class="menu-item-tile col-md-6">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="menu-item-photo">
+        <div class="ng-binding">SP6</div>
+        <img class="img-responsive" width="250" height="150" ng-src="https://www.davidchuschinabistro.com/images/SP6.jpg" alt="Grilled Veal" src="https://www.davidchuschinabistro.com/images/SP6.jpg">
+      </div>
+      <div class="menu-item-price ng-binding"><span class="ng-binding"> </span> $21.95 <span class="ng-binding"></span></div>
+    </div>
+    <div class="menu-item-description col-sm-7">
+      <h3 class="menu-item-title ng-binding">Grilled Veal</h3>
+      <p class="menu-item-details ng-binding">marinated and grilled veal served with vegetables and lo mein on the side</p>
+    </div>
+  </div>
+  <hr class="visible-xs">
+</div>
+</menu-item><!-- end ngRepeat: menuItem in menuItemsCtrl.menuItems.menu_items --><menu-item ng-repeat="menuItem in menuItemsCtrl.menuItems.menu_items" menu-item="menuItem" class="ng-scope ng-isolate-scope"><div class="menu-item-tile col-md-6">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="menu-item-photo">
+        <div class="ng-binding">SP7</div>
+        <img class="img-responsive" width="250" height="150" ng-src="https://www.davidchuschinabistro.com/images/SP7.jpg" alt="Orange Beef" src="https://www.davidchuschinabistro.com/images/SP7.jpg">
+      </div>
+      <div class="menu-item-price ng-binding"><span class="ng-binding"> </span> $21.95 <span class="ng-binding"></span></div>
+    </div>
+    <div class="menu-item-description col-sm-7">
+      <h3 class="menu-item-title ng-binding">Orange Beef</h3>
+      <p class="menu-item-details ng-binding">a few cuts of beef, breaded, deep-fried with sauce containing orange peels; served with lo mein on the side</p>
+    </div>
+  </div>
+  <hr class="visible-xs">
+</div>
+</menu-item><!-- end ngRepeat: menuItem in menuItemsCtrl.menuItems.menu_items --><menu-item ng-repeat="menuItem in menuItemsCtrl.menuItems.menu_items" menu-item="menuItem" class="ng-scope ng-isolate-scope"><div class="menu-item-tile col-md-6">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="menu-item-photo">
+        <div class="ng-binding">SP2</div>
+        <img class="img-responsive" width="250" height="150" ng-src="https://www.davidchuschinabistro.com/images/SP2.jpg" alt="Teriyaki Chicken" src="https://www.davidchuschinabistro.com/images/SP2.jpg">
+      </div>
+      <div class="menu-item-price ng-binding"><span class="ng-binding"> </span> $20.95 <span class="ng-binding"></span></div>
+    </div>
+    <div class="menu-item-description col-sm-7">
+      <h3 class="menu-item-title ng-binding">Teriyaki Chicken</h3>
+      <p class="menu-item-details ng-binding">marinated grilled chicken breast with vegetables and lo mein on the side</p>
+    </div>
+  </div>
+  <hr class="visible-xs">
+</div>
+</menu-item><!-- end ngRepeat: menuItem in menuItemsCtrl.menuItems.menu_items -->
+
+
+</div>
